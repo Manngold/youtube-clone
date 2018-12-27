@@ -20,7 +20,7 @@ app.use(morgan("dev"));
 app.use(localMiddleware);
 
 app.use(routes.home, globalRouter);
-app.use(routes.home, userRouter);
-app.use(routes.home, videoRouter);
+app.use(routes.users, userRouter);
+app.use(routes.videos, videoRouter);
 
 export default app;
