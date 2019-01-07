@@ -8,6 +8,5 @@ export const localMiddleware = (req, res, next) => {
     isAutenticated: true,
     id: 1
   };
-  console.log(res.locals);
   next();
 };
