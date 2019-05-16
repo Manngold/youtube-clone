@@ -8,11 +8,19 @@ const handleListening = () => {
 
 const handleHome = (req, res) => {
   res.send("hi there");
+  console.log("final result");
 };
 
 const handleProfile = (req, res) => {
   res.send("here is profile");
 };
+
+const middlefunc = (req, res, next) => {
+  console.log("middleware test");
+  next();
+};
+
+app.use(middlefunc);
 
 app.get("/", handleHome);
 app.get("/profile", handleProfile);
