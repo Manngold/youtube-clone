@@ -1,38 +1,41 @@
 {
-  "name": "youtube-clone",
-  "version": "1.0.0",
-  "description": "youtube clone coding using node.js",
-  "main": "index.js",
-  "dependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.4.4",
-    "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.4",
-    "dotenv": "^8.0.0",
-    "express": "^4.16.4",
-    "helmet": "^3.18.0",
-    "mongoose": "^5.6.2",
-    "morgan": "^1.9.1",
-    "multer": "^1.4.2",
-    "pug": "^2.0.4"
-  },
-  "devDependencies": {
-    "eslint": "^6.1.0",
-    "nodemon": "^1.19.0"
-  },
-  "scripts": {
-    "start": "nodemon --exec babel-node init.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Manngold/youtube-clone.git"
-  },
-  "author": "manngold",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Manngold/youtube-clone/issues"
-  },
-  "homepage": "https://github.com/Manngold/youtube-clone#readme"
+    "name": "youtube-clone",
+    "version": "1.0.0",
+    "description": "youtube clone coding using node.js",
+    "main": "index.js",
+    "dependencies": {
+        "@babel/core": "^7.4.4",
+        "@babel/node": "^7.2.2",
+        "@babel/preset-env": "^7.4.4",
+        "body-parser": "^1.19.0",
+        "cookie-parser": "^1.4.4",
+        "dotenv": "^8.0.0",
+        "express": "^4.16.4",
+        "helmet": "^3.18.0",
+        "mongoose": "^5.6.2",
+        "morgan": "^1.9.1",
+        "multer": "^1.4.2",
+        "pug": "^2.0.4",
+        "webpack": "^4.36.1",
+        "webpack-cli": "^3.3.6"
+    },
+    "devDependencies": {
+        "eslint": "^6.1.0",
+        "nodemon": "^1.19.0"
+    },
+    "scripts": {
+        "dev:server": "nodemon --exec babel-node init.js",
+        "dev:assets": "webpack",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Manngold/youtube-clone.git"
+    },
+    "author": "manngold",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Manngold/youtube-clone/issues"
+    },
+    "homepage": "https://github.com/Manngold/youtube-clone#readme"
 }
